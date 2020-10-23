@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Rajab</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+        }
+        body{
+            height: 100hv;
+        }
+        .container{
+            margin: 1em;
+            min-height: 90vh;
+        }
+        .container div{
+            margin-top: 1em;
+        }
+        .header{
+            background: #f1f1f1;
+            width: 100%;
+            border-radius: 5px;
+            padding: 1em;
+            text-align: center;
+        }
+        .info_container{
+            display: flex;
+            
+        }
+        ul,
+        li{
+            list-style: none;
+            margin: auto;
+        }
+        .info_list{
+            text-align: left;
+        }
+        .info_item{
+            margin-top: 1em;
+            margin-left: 4em;
+        }
+        .btn{
+            display: inline-block;
+            padding: 0.2em 0.5em;
+            border-radius: 5px;
+            background: #1d1d1d;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .lin{
+            background: #006097;
+        }
+        .g{
+            background: #24292e;
+        }
+        .t{
+            background: #3598e9;
+        }
+        .c{
+            background: #444857;
+        }
+        .f{
+            background: #385898;
+        }
+        .info_item span:first-child{
+            font-weight: 700;
+        }
+        #mail{
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 1rem;
+            min-width: 12em;
+            margin-right: 1em;
+        }
+        .skills_list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .skilles h1,
+        .edu h1,
+        .lang h1{
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .skilles,
+        .edu,
+        .lang{
+            width: 300%;
+            text-align: left;
+            margin: 1em 4em;
+            padding: 0 2em;
+        }
+        .lang{
+            text-align: center;
+        }
+        .lang div{
+            display: inline-block;
+            padding: 0 1em;
+        }
+        .proj{
+            text-align: center;
+        }
+        .proj_container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+        .proj_job{
+            background: #f1f1f1;
+            margin-right: 1em;
+            padding: 1em;
+            border-radius: 3px;
+            text-align: left;
+        }
+        .proj_tittle{
+            text-align: center;
+        }
+        .proj_type{
+            color: #5a5a5a;
+            text-indent: 1em;
+        }
+    </style>
+    <div class="container">
+        <div class="header">
+            <h1 class="name">
+                Muhammad Rajab AbdulHay
+            </h1>
+            <p class="position">
+                Frontend Developer
+            </p>
+            <div class="info_container">
+                <ul class="info_list">
+                    <li class="info_item">
+                        <span>Address:</span> Egypt, AlBuhayra, Kafr ElDawar
+                    </li>
+                    <li class="info_item">
+                        <span>Military Status:</span> Postponed
+                    </li>
+                    <li class="info_item">
+                        <span>Social Status:</span> Singel
+                    </li>
+                </ul>
+                <ul class="info_list">
+                    <li class="info_item">
+                        <span>Date of birth:</span> 04/08/1998
+                    </li>
+                    <li class="info_item">
+                        <span>Phone:</span> +201207064916
+                    </li>
+                    <li class="info_item">
+                        <span>E-mail:</span> <input type="text" id="mail" value="muhrajab1998@gmail.com" readonly> <button onclick="copyMail()" class="btn">copy</button>
+                    </li>
+                </ul>
+            </div>
+            <p class="info_item">
+                <span>Find me online:</span> 
+                <a href="https://www.linkedin.com/in/mr-bingo5/" target="_blank" class="btn lin">Linkedin</a> 
+                <a href="https://twitter.com/mr_bingo5" target="_blank" class="btn t">Twitter</a> 
+                <a href="https://github.com/mrbingo98" target="_blank" class="btn g">GitHub</a>
+                <a href="https://codepen.io/mrbingo" target="_blank" class="btn c">CodePen</a> 
+                <a href="https://www.facebook.com/mr.bingo5" target="_blank" class="btn f">Facebook</a> 
+            </p>
+        </div>
+        <div class="flex">
+            <div class="edu">
+                <h1>Education</h1>
+                <h6 class="degree">Bachelor of Computer Science</h6>
+                <p class="university">Kafr El-Sheikh University "Egypt"</p>
+                <p class="faculty">Faculty of Computers and Information</p>
+            </div>
+            <div class="lang">
+                <h1>Languages</h1>
+                <div>
+                    <h3>Arabic</h3>  <p>Native</p>
+                </div>
+                <div>
+                    <h3>English</h3> <p>Good</p>
+                </div>
+            </div>
+            <div class="skilles">
+                <h1>Skills</h1>
+                <div class="skills_list">
+                    <ul>
+                        <li class="skill">
+                            Javascript
+                        </li>
+                        <li class="skill">
+                            Next-gen JS (ES6, ES7,...)
+                        </li>
+                        <li class="skill">
+                            Vue.js
+                        </li>
+                        <li class="skill">
+                            HTML
+                        </li>
+                        <li class="skill">
+                            CSS
+                        </li>
+                        <li class="skill">
+                            Bootstrap
+                        </li>
+                    </ul>
+                    <ul>
+                        
+                        <li class="skill">
+                            Semantic UI
+                        </li>
+                        <li class="skill">
+                            AJAX
+                        </li>
+                        <li class="skill">
+                            JSON
+                        </li>
+                        <li class="skill">
+                            WebPack
+                        </li>
+                        <li class="skill">
+                            Babel.js
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="proj">
+            <h1>Projects</h1>
+            <div class="proj_container">
+                <div class="proj_job">
+                    <h3 class="proj_tittle">Foody (recipes search app)</h3>
+                    <p class="proj_type">Self Learning</p>
+                    <ul class="responsibilities">
+                        <li class="resp">
+                            Improve my AJAX skills.
+                        </li>
+                        <li class="resp">
+                            Improve my ES6 skills and gain more experience at JavaScript.
+                        </li>
+                        <li class="resp">
+                            Design the whole app with a more modern and organized way.
+                        </li>
+                        <li class="resp">
+                            The Github link for the app <a href="https://github.com/mrbingo98/Food-recipes-API-ES-next-" target="_blank">here</a> and the live app link on Codepen <a href="https://codepen.io/mrbingo/project/editor/XVzaag" target="_blank">here</a>.
+                        </li>
+                    </ul>
+                </div>
+                <div class="proj_job">
+                    <h3 class="proj_tittle">Todo List</h3>
+                    <p class="proj_type">Self Learning</p>
+                    <ul class="responsabilities">
+                        <li class="resp">
+                            First time working with local storage.
+                        </li>
+                        <li class="resp">
+                            Improve my code archticture (clean, readable, editable).
+                        </li>
+                        <li class="resp">
+                            The project link on Github is <a href="https://github.com/mrbingo98/Todo-List-Saves-Tasks-to-Local-Storage" target="_blank" rel="noopener noreferrer">here</a> and the link for the codepen pen is <a href="https://codepen.io/mrbingo/pen/XWdBgbe" target="_blank" rel="noopener noreferrer">here</a>.
+                        </li>
+                    </ul>
+                </div>
+                <div class="proj_job">
+                    <h3 class="proj_tittle">Dalil (guidance website to Kafr ElSheikh city)</h3>
+                    <p class="proj_type">Graduation project</p>
+                    <ul class="responsabilities">
+                        <li class="resp">
+                            Working on a real-time app.
+                        </li>
+                        <li class="resp">
+                            Developed the whole website frontend.
+                        </li>
+                        <li class="resp">
+                            The project link on Github is <a href="https://github.com/mrbingo98/A-guidance-website-to-kafr-ElSheikh-city-dalil-" target="_blank" rel="noopener noreferrer">here</a> and the live website link is <a href="https://dalil1.herokuapp.com/" target="_blank" rel="noopener noreferrer">here</a>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function copyMail(){
+            var mail = document.getElementById('mail')
+            mail.select();
+            mail.setSelectionRange(0, 30);
+            document.execCommand("copy");
+            alert("E-mail Copied: " + mail.value);
+        }
+    </script>
+</body>
+</html>
